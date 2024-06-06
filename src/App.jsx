@@ -43,7 +43,7 @@ function App() {
       <div>dice 1: {num}</div>
       <div>dice 2: {num2}</div>
       <div>score= {score}</div>
-      <button onClick={handleClick} disabled={isButtonDisabled}>Roll dice</button>
+      <button onClick={handleClick} disabled={score >= 100}>Roll dice</button>
     </div>
   );
   
