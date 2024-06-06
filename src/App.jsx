@@ -2,15 +2,6 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [isButtonDisabled, setButtonDisabled] = useState(false);
-
-  const disableButton = () => {
-      setButtonDisabled(true);
-  };
-
-  const enableButton = () => {
-      setButtonDisabled(false);
-  };
   const [num, setNum] = useState(0);
   const [num2, setNum2] = useState(0);
   const [score, setScore] = useState(0);
@@ -25,12 +16,6 @@ function App() {
     setNum(randomNumberInRange(1, 6));
     setNum2(randomNumberInRange(1, 6));
     setScore(score+num+num2);
-    if(score>=100) {
-      disableButton();
-    }
-    else {
-      enableButton();
-    };
     if(score==100){
       alert("Congratulations, you won!");
     };
