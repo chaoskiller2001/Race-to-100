@@ -16,13 +16,19 @@ function App() {
     setNum(randomNumberInRange(1, 6));
     setNum2(randomNumberInRange(1, 6));
     setScore(score+num+num2);
+    if(score==100){
+      alert("Congratulations, you won!");
+    };
+    if(score>100){
+      alert("You lose!");
+    };
   };
   return (
     <div>
       <div>dice 1: {num}</div>
       <div>dice 2: {num2}</div>
       <div>score= {score}</div>
-      <button onClick={handleClick}>Roll dice</button>
+      <button onClick={handleClick} disabled={score >= 100}>Roll dice</button>
     </div>
   );
   
