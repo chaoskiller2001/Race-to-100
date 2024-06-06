@@ -12,12 +12,9 @@ function App() {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  const handleClick = () => {
-    setNum(randomNumberInRange(1, 6));
-  };
   const [num2, setNum2] = useState(0);
-
-  const handleClick2 = () => {
+  const handleClick = () => {
+    setNum(randomNumberInRange(1, 5));
     setNum2(randomNumberInRange(1, 5));
   };
   return (
