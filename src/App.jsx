@@ -18,9 +18,9 @@ function App() {
   };
   return (
     <div>
-      <h2>dice 1: {num}</h2>
-      <h3>dice 2: {num2}</h3>
-      <button onClick={() =>{handleClick(), handleClick2()}}>Roll dice</button>
+      <div>dice 1: {num}</div>
+      <div>dice 2: {num2}</div>
+      <button onClick={handleClick}>Roll dice</button>
     </div>
   );
   
