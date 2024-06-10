@@ -34,8 +34,8 @@ function App() {
       <div>dice 1: {num}</div>
       <div>dice 2: {num2}</div>
       <div>score= {score}</div>
-      <div id='y'>Congratulations! You won!</div>
-      <div id='z'>You lost. Better luck next time.</div>
+      {score === 100 && <div>Congratulations! You won!</div>}
+      {score > 100 && <div>You lost. Better luck next time.</div>}
       <button onClick={handleClick} disabled={score >= 100}>Roll dice</button>
       <button onClick={reset}>Reset game</button>
     </div>
