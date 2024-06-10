@@ -21,12 +21,6 @@ function App() {
     setNum2(randomNumberInRange(1, 6));
     setScore(score+num+num2);
   };
-  if(score==100){
-    y.style.display="block"
-  };
-  if(score>100){
-    z.style.display="block"
-  };
   return (
     <div>
       <div>dice 1: {num}</div>
