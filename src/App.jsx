@@ -14,8 +14,6 @@ function App() {
     setNum(0);
     setNum2(0);
     setScore(0);
-    y.style.display="none"
-    z.style.display="none"
   };
   
   const handleClick = () => {
